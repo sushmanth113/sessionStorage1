@@ -1,0 +1,14 @@
+<html>
+<body>
+<script>
+let demo = document.getElementById("demo");
+if (sessionStorage.getItem("autosave")) {
+  demo.value = sessionStorage.getItem("autosave");
+}
+
+field.addEventListener("change", function() {
+  sessionStorage.setItem("autosave", demo.value);
+});
+</script>
+</body>
+</html>
